@@ -1,2 +1,9 @@
+// const strapi = require('@strapi/strapi');
+// strapi().start();
+
 const strapi = require('@strapi/strapi');
-strapi().start();
+
+strapi({
+    autoReload: true,
+    serveAdminPanel: true
+}).start();
